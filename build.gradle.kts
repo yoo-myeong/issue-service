@@ -21,6 +21,7 @@ repositories {
 
 dependencies {
     // JWT
+    implementation("com.auth0:java-jwt:3.19.2")
 
     // Kotlin Logging
     implementation("io.github.oshai:kotlin-logging-jvm:5.1.0")
