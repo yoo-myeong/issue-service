@@ -22,7 +22,9 @@ class WebConfig(
 
 @Component
 class AuthUserHandlerArgumentResolver : HandlerMethodArgumentResolver {
-    override fun supportsParameter(parameter: MethodParameter): Boolean = AuthUser::class.java.isAssignableFrom(parameter.parameterType)
+    override fun supportsParameter(parameter: MethodParameter): Boolean = AuthUser::class.java.isAssignableFrom(
+        parameter.parameterType
+    )
 
     override fun resolveArgument(
         parameter: MethodParameter,
@@ -32,7 +34,7 @@ class AuthUserHandlerArgumentResolver : HandlerMethodArgumentResolver {
     ): Any? =
         AuthUser(
             userId = 1,
-            username = "mocha",
+            username = "mocha"
         )
 }
 

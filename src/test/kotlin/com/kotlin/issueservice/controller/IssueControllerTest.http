@@ -1,0 +1,11 @@
+# 이슈 생성
+POST http://localhost:8080/api/v1/issue
+Content-Type: application/json
+
+{
+  "summary": "테스트",
+  "description": "내용",
+  "type": "TASK",
+  "priority": "LOW",
+  "status": "TODO"
+}

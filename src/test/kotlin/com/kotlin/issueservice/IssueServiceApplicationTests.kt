@@ -9,5 +9,4 @@ class IssueServiceApplicationTests {
     @Test
     fun contextLoads() {
     }
-
 }
