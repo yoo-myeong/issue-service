@@ -12,3 +12,7 @@ data class NotFoundException(
 data class UnauthorizedException(
     override val message: String = "인증정보가 잘못되었습니다.",
 ) : ServerException(401, message)
+
+data class InvalidRequestException(
+    override val message: String = "잘못된 요청입니다.",
+) : ServerException(400, message)

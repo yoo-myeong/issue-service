@@ -1,5 +1,5 @@
 # 이슈 생성
-POST http://localhost:8080/api/v1/issue
+POST http://localhost:9000/api/v1/issue
 Content-Type: application/json
 
 {
